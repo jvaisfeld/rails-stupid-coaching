@@ -1,0 +1,15 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+<p>Q: <%= @query %> </p>
+
+
+<% if @query == "I am going to work right now!"
+    return ""
+  else
+    return "I don't care, get dressed and go to work!"
+  end
+  %>
+
+
+<p><%= link_to "Ask another question", 'questions#ask' %></p>
