@@ -1,10 +1,17 @@
-<h1>Questions#ask</h1>
-<p>Find me in app/views/questions/ask.html.erb</p>
+      <h1>Your are Zlatan! You wanna play tonight but what does your coach say?</h1>
 
-<form action="/answer" method='get'>
-  <label for="question">Speak to your coach</label>
-  <input type="text" id="question" name="query" placeholder="what time is it?">
-  <input type="submit" value="Go on!">
-</form>
+      <div class="form-center">
+        <form action="/answer">
+          <div class="form-group">
+            <label for="question">Speak to your Guardiola</label>
+            <input type="text" id="question" name="query" class="form-control" placeholder="coach I wanna play!">
+          </div>
+          <input class="btn btn-primary" type="submit" value="tell him!">
+        </form>
+      </div>
 
-
+      <p>Here are your options: <br>
+        1. tell him anything you want like "I wanna play tonight" <br>
+        2. tell him "You are better than Mourinho!" -> HE WILL BE HAPPY <br>
+        3. tell him "Go to hell!" or "You don't have any balls!" --> HE WILL CRY..
+      </p>

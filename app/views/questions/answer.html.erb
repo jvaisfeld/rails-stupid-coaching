@@ -1,15 +1,9 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
 
-<p>Q: <%= @query %> </p>
+    <h1>Here's how your little awkward talk went...</h1>
 
+<h3>Zlatan: <%= @message %> </h3>
+<h3>Guardiola: <%= @coach_answer %></h3>
 
-<% if @query == "I am going to work right now!"
-    return ""
-  else
-    return "I don't care, get dressed and go to work!"
-  end
-  %>
+<%= link_to "Ask another question", ask_path %>
 
 
-<p><%= link_to "Ask another question", 'questions#ask' %></p>
